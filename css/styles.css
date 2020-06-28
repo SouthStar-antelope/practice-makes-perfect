@@ -1,3 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-image: url(images/jingyesi.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 20px 10px;
+}
 h1 {
   color: tomato;
   background-color: lightblue;
