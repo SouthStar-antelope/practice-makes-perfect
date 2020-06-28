@@ -1,7 +1,9 @@
 h1 {
   color: tomato;
   background-color: lightblue;
+  text-align: center;
 }
 p {
-  color: Dodgblue;
+  color: purple;
+  text-align: center;
 }
