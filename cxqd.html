@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>四季更替</title>
     <style type="text/css">
-        html,body,span {
+        html,body,div {
             height: 100%;
             width: 100%;
             margin: 0;
         }
-        span {
+        div {
             height: 100%;
             font-size: 180px;
             position: absolute;
+            text-align: center;
             padding-top: 30%;
-            padding-left: 30%;
         }
         @keyframes cani {
             0% {opacity:0}
@@ -43,28 +43,44 @@
             80% {opacity:100}
             100% {opacity:0}
         }
+        @keyframes zani {
+            0% {opacity:0}
+            70% {opacity:0}
+            80% {opacity:100}
+            90% {opacity:0}
+            100% {opacity:0}
+        }
         #c {
             background-color: lightgreen;
-            animation: cani 10s infinite;
+            animation: cani 9s infinite;
         }
         #x {
             background-color: red;
-            animation: xani 10s infinite;
+            animation: xani 9s infinite;
         }
         #q {
             background-color: yellow;
-            animation: qani 10s infinite;
+            animation: qani 9s infinite;
         }
         #d {
             color: black;
-            animation: dani 10s infinite;
+            animation: dani 9s infinite;
+        }
+        #z {
+            font-size: 50px;
+            color: black;
+            display: block;
+            animation: zani 9s infinite;
         }
     </style>
 </head>
 <body>
-    <span id="c">春</span>
-    <span id="x">夏</span>
-    <span id="q">秋</span>
-    <span id="d">冬</span>
+    <div id="c">春</div>
+    <div id="x">夏</div>
+    <div id="q">秋</div>
+    <div id="d">
+        冬<span id="z">贞下起元</span>
+    </div>
+    <audio src="audios/bg.mp3" autoplay loop preload="auto"></audio>
 </body>
 </html>
